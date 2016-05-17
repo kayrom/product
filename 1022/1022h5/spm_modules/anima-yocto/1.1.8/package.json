@@ -1,0 +1,43 @@
+{
+  "name": "anima-yocto",
+  "version": "1.1.8",
+  "description": "Yocto is a javascript dom library for mobile from Anima, rebuild and simplify some modules from Zepto.",
+  "keywords": ["yocto", "zepto"],
+  "homepage": "http://gitlab.alibaba-inc.com/animajs/yocto",
+  "author": "wanyan.wz@taobao.com",
+  "maintainers": [
+    "wanyan.wz@taobao.com",
+    "yuanfei.gyf@alipay.com",
+    "wangwei.wang@alipay.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.alibaba-inc.com/animajs/yocto.git"
+  },
+  "bugs": {
+    "url": "http://gitlab.alibaba-inc.com/animajs/yocto/issues"
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+      "anima-yocto-core": "1.1.0",
+      "anima-yocto-ajax": "1.0.5",
+      "anima-yocto-event": "1.0.2",
+      "anima-yocto-touch": "1.0.8"
+    },
+    "devDependencies": {
+      "expect.js": "0.3.1",
+      "anima-yocto-plugin": "1.0.0"
+    },
+    "buildArgs": "--umd $",
+    "tests": "tests/*.js"
+  },
+  "scripts": {
+    "build": "spm-webpack"
+  },
+
+  "devDependencies": {
+    "spm-webpack": "~0.7.2"
+  }
+}

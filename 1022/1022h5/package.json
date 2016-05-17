@@ -1,0 +1,22 @@
+{
+  "spm": {
+    "output": [
+      "*.html",
+      "*.js"
+    ],
+    "build": {
+      "define": {
+        "DEBUG": false
+      },
+      "extractCSS": true,
+      "autoprefixer": true
+    },
+    "server": {
+      "define": {
+        "DEBUG": true
+      }
+    },
+    "dependencies": {
+    }
+  }
+}

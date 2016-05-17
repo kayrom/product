@@ -1,0 +1,999 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>月末清仓专场</title>
+  <!-- <link href="http://img001.meitianhui.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
+  <meta name="keywords" content="每天惠商城，每天惠，慧顾家，惠顾家，天天特价，发现值得买，值得买，白菜价，特产，打折，品牌折扣，限时抢购，特卖" />
+  <meta name="description" content="慧顾家（h.meitianhui.com），专注原产地直供特卖；精选源头优质商品，拒绝一切中间商，产品更低价！全场购物享包邮，提供贴心服务！购买商品获赠礼券，礼券还可以免费包邮兑换心仪商品；让您一份钱两份花，智慧照顾家！" />
+  <link rel="stylesheet" href="http://img001.meitianhui.com/css/h5/index.css?version=20151023000009">
+  <style>
+    html,body {
+      overflow-x: hidden;
+    }
+    body {
+      font-size: 12px;
+      width: 100%;
+    }
+    .icon {
+      display: block;
+      font-size: 0;
+      position: absolute;
+    }
+    .top-b {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .top-b img {
+      width: 100%;
+    }
+    #main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .newbee {
+      position: relative;
+      padding: 0 10px 15px 10px;
+      background: #550178;
+    }
+    .newbee img {
+      width:100%;
+    }
+    .newbee-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide .list {
+      padding-top: 30px;
+    }
+    .newbee-rule {
+      position: absolute;
+      width: 53%;
+      height: 53%;
+      top: 0;
+      right: 0;
+    }
+    .lottery-wrap {
+      background: url(http://img001.meitianhui.com/public/images/3d/77/6b/6e259cdc9f7d9304c056a98a2070bd1feae26989.png) no-repeat 0 0 #38113e;
+      background-size: 100% 120px;
+      padding: 10px 5px;
+    }
+    .lottery-bg {
+      width: 100%;
+    }
+    #lottery-box {
+      width: 310px;
+      height: 310px;
+      position: relative;
+      margin: 0 auto;
+      padding: 5px 0 10px 0;
+      background: url(http://img001.meitianhui.com/public/images/27/ff/60/09f62aac230c75e5d1f323b090bc8b74642f29a8.png) no-repeat top center;
+      background-size: 320px 93px;
+    }
+    .lottery-wheel img {
+      width: 310px;
+      height: 310px;
+    }
+    .lottery {
+      position: relative;
+    }
+    .lottery-trigger {
+      position: absolute;
+      width: 88px;
+      height: 88px;
+      top: 111px;
+      left: 111px;
+      background: url(http://img001.meitianhui.com/public/images/ef/d3/ec/90c022dc39c2179291e4fc2524dfdad92b93578c.png) no-repeat 0 0;
+      background-size: 88px 88px;
+    }
+    .lottery-arrow {
+      position: absolute;
+      width: 22px;
+      height: 29px;
+      top: 84px;
+      left: 145px;
+      background: url(http://img001.meitianhui.com/public/images/c2/68/79/0a7cfc56f9a9ca5a06ba6afbc44331a8db277425.png) no-repeat 0 0;
+      background-size: 22px 29px;
+    }
+    .lottery-result {
+      margin: 0 auto;
+      border: 1px solid #38113e;
+      border-radius: 3px;
+      background-color: #ec420c;
+      padding: 4px;
+    }
+    .lottery-result .hd {
+      clear: both;
+      height: 32px;
+      line-height: 32px;
+      margin-bottom: 5px;
+    }
+    .hd strong {
+      color: #ffe400;
+      font-size: 15px;
+    }
+    .my-award {
+      float: right;
+      width: 70px;
+      height: 24px;
+      line-height: 24px;
+      background-color: #ffe400;
+      color: #f04131;
+      display: block;
+      text-align: center;
+      border-radius: 6px;
+      margin-top: 5px;
+    }
+    .lottery-rule {
+      position: relative;
+      background-color: #820a95;
+      color: #fff;
+      padding: 5px 72px 5px 3px;
+      color: #fff;
+      line-height: 24px;
+    }
+    .lottery-rule strong {
+      float: left;
+      width: 58px;
+    }
+    .lottery-rule p {
+      margin-left: 66px;
+      line-height: 24px;
+    }
+    .lottery-rule a {
+      position: absolute;
+      right: 5px;
+      bottom: 3px;
+      width: 66px;
+      border-radius: 9px;
+      height: 24px;
+      line-height: 24px;
+      background-color: #000;
+      color: #ffff00;
+      display: block;
+      text-align: center;
+    }
+    .marquee-box {
+      height: 88px;
+      overflow: hidden;
+      position: relative;
+      background-color: #ffce5a;
+    }
+    .J_Result {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .J_Result li{
+      height: 22px;
+      background-color: #ffce5a;
+      line-height: 22px;
+      padding-left: 30px;
+      /*border: none!important;
+      margin-bottom: 0;
+      overflow: hidden;*/
+    }
+    .result-label {
+      color: #666;
+      float: left;
+      width: 113px;
+    }
+    .result-info {
+      color: #e5310e;
+    }
+    .hd {
+      height: 45px;
+    }
+    .ko {
+      background: #f6cc08;
+      padding: 5px 5px 10px 5px;
+    }
+    .ko .hd {
+      background: url(http://img001.meitianhui.com/public/images/e8/dc/78/084eb42454c88eb5e70203f92035a9bccd4f516b.png) no-repeat center center;
+      background-size: 158px 32px;
+    }
+    .ko .swiper-slide {
+      display: block;
+    }
+    .list {
+      width: 100%;
+      display: block;
+      background-color: #fff;
+      position: relative;
+      text-align: left;
+    }
+    .list img {
+      width: 100%;
+    }
+    .list-tit {
+      padding: 0 6px;
+      line-height: 26px;
+      height: 26px;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ko-time {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30px;
+      width: 100%;
+      line-height: 30px;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000, endColorstr=#40000000) \\8;*/
+      background-color: rgb(1,167,111);
+    }
+    .ko-item-end .ko-time {
+      background-color: rgb(101,101,101);
+    }
+    .ko-item-end .to-detail {
+      background-color: #666666;
+      padding: 8px 13px 8px 18px;;
+    }
+    .ko-box {
+      position: relative;
+      height: 50px;
+      border-top: 1px solid #ccc;
+      font-size: 18px;
+      padding-right: 50px;
+      padding-left: 10px;
+    }
+    .ko-price {
+      color: #f04131;
+      position: relative;
+      line-height: 50px;
+    }
+    .ko .old-price {
+      line-height: 50px;
+    }
+    .normal-price {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 33px;
+    }
+    .ko .normal-price {
+      margin-left: 4px;
+    }
+    .to-detail {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 65px;
+      height: 50px;
+      padding: 8px 18px 8px 13px;
+      background-color: #096;
+      color: #ff2f65;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 16px;
+      box-sizing: border-box;
+    }
+    .arrow-icon {
+      width: 10px;
+      height: 18px;
+      left: 45px;
+      top: 16px;
+      background: url(http://img001.meitianhui.com/public/images/73/45/c4/e04a95469b16666d3536ad248d18d47b26279394.png) no-repeat 0 0;
+      background-size: 10px 18px;
+    }
+    .triggers {
+      display: -webkit-box;
+      width: 100%;
+      margin: 10px auto;
+    }
+    .trigger {
+      -webkit-box-flex:1;
+      display: block;
+      text-align: center;
+      line-height: 30px;
+      background: #000;
+      color: #fff;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      opacity: 1;
+    }
+    .trigger:first-child{
+      border-radius: 20px 0 0 20px;
+    }
+    .trigger:last-child {
+      border-radius: 0 20px 20px 0;
+    }
+    .trigger.swiper-pagination-bullet-active {
+      background-color: #e8390d;
+      color: #fff;
+    }
+    /**
+     * 特价预售
+     */
+     .order99 {
+      background: #f6cc08;
+    }
+    .order99 .hd{
+      height: 75px;
+      background: url(http://img001.meitianhui.com/public/images/e8/3b/e3/6a89a5c9e5e7553e2dd37d8fa5882b33409d078c.png) no-repeat center center;
+      background-size: 207px 46px;
+    }
+    .order99-list li {
+      margin-bottom: 10px;
+      background-color: #fff;
+      height: 160px;
+    }
+    .coupon {
+      margin-left: 4px;
+    }
+    .order99-list li a {
+      display: block;
+      width: 100%;
+      height: 160px;
+    }
+    .order99-list .coupon {
+      margin-left: 0;
+    }
+    .order99-img {
+      display: block;
+      float: left;
+      width: 160px;
+      height: 160px;
+    }
+    .order99-img img {
+      width: 160px;
+      height: 160px;
+    }
+    .order99-info {
+      position: relative;
+      margin-left: 160px;
+      height: 160px;
+    }
+    .item-tit {
+      line-height: 26px;
+      max-height: 56px;
+      font-size: 16px;
+      margin-bottom: 4px;
+      overflow: hidden;
+    }
+    .order99 .item-tit {
+      padding: 9px 10px 0 10px;
+      color: #666;
+      font-size: 14px;
+      line-height: 20px;
+      height: 40px;
+    }
+    .order99 .summary {
+      font-size: 12px;
+      color: #999;
+      padding: 0 10px;
+      line-height: 18px;
+      height: 36px;
+      overflow: hidden;
+    }
+    .order99-info .item-countdown {
+      margin: 20px;
+      padding-left: 23px;
+      position: relative;
+      line-height: 20px;
+      color: #666;
+    }
+    .order99-list .price-sold {
+      position: absolute;
+      height: 72px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+    .order99-info .item-price {
+      line-height: 30px;
+      color: #e61212;
+      font-size: 16px;
+      padding: 0 10px;
+      height: 30px;
+      overflow: hidden;
+    }
+    .order99-info .present-price {
+      font-size: 20px;
+    }
+    .order99-info .item-price del {
+      color: #999;
+      font-size: 12px;
+    }
+    .summary {
+      font-size: 12px;
+      color: #999;
+      padding: 0 20px;
+      line-height: 20px;
+      height: 40px;
+      overflow: hidden;
+    }
+    .coupon-sold {
+      border-top: 1px solid #ccc;
+    }
+    .order99-info .to-detail {
+      top: 30px;
+      padding: 4px 14px 4px 7px;
+      height: 42px;
+      width: 54px;
+      font-size: 12px;
+    }
+    .order99-info .arrow-icon {
+      top: 12px;
+      left: 36px;
+    }
+    .order99-info .item-countdown {
+      margin: 10px;
+      padding-left: 16px;
+      position: relative;
+      line-height: 20px;
+      color: #666;
+    }
+    .item-countdown .icon {
+      display: block;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background: url(http://img001.meitianhui.com/public/images/4e/75/ac/869dd3ed6173dc4d1e0725335727cbcfcc2f73ec.png) no-repeat 0 0;
+      background-size: 12px 12px;
+    }
+    .order99-info .price-off {
+      top: -3px;
+    }
+    .coupon-sold {
+      padding: 2px 0 0 10px;
+    }
+    .coupon-sold .coupon {
+      margin-bottom: 5px;
+    }
+    .o-sold {
+      color: #666;
+      line-height: 18px;
+    }
+    .o-sold .J_SoldAmount {
+      color: #099f8d;
+      padding: 0 3px;
+    }
+    .to-detail-selling {
+      background-color: #ffeb00;
+    }
+    /**
+     * kitchen
+     *
+     */
+     .scene-box {
+      padding-top: 18px;
+    }
+    .scene-box .bd,
+    .yuemo .bd {
+      padding: 0 15px 0px 15px;
+    }
+    .kitchen {
+      background: #7d30cc;
+    }
+    .scene-img {
+      width: 100%;
+      vertical-align: middle;
+      vertical-align:middle;
+    }
+    /**
+     * 特卖
+     */
+    .ko-img img {
+      width: 100%;
+    }
+    .ko-list-tit {
+      margin: 0 10px;
+      text-align: left;
+      line-height: 28px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .t9-price {
+      padding: 3px 10px 0 0;
+      height: 22px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #f0285c;
+    }
+    .t9-price strong {
+      font-size: 18px;
+    }
+    .old-price-coupon,
+    .old-price {
+      line-height: 20px;
+      margin-left: 0;
+    }
+    /**
+     * 吃货
+     */
+     .yuemo {
+      background-color: #fffece;
+      /*background-color: #ddd;*/
+    }
+    
+    .flex {
+      overflow: hidden;
+      content: '\20';
+      display: block;
+      clear: both;
+    }
+    .floor .bd {
+      overflow: hidden;
+      content: '\20';
+      display: block;
+      clear: both;
+    }
+    .flex-item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      width: 0;
+      -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      max-width: 50%;
+      display: block;
+      box-sizing: border-box;
+      margin-right: 2px;
+      margin-bottom: 5px;
+    }
+    .flex-item-margins .flex-item {
+      margin-bottom: 0px;
+    }
+    .scene-bg {
+      width: 100%;
+      height: 100%;
+      -webkit-box-flex: 1;
+      box-flex: 1;
+    }
+
+    .flex-item:nth-child(even){
+      padding: 0 0 0 5px;
+    }
+    .goods {
+      display: block;
+      background-color: #ff2f65;
+    }
+    .goods img {
+      width: 96.3%;
+      padding: 5px 5px 0 6px;
+    }
+    .goods .to-detail {
+      width: 40px;
+      height: 46px;
+      padding: 6px 12px 4px 4px;
+      font-size: 12px;
+    }
+    .goods .arrow-icon {
+      left: 31px;
+      background-size: 6px 13px;
+      width: 6px;
+      height: 14px;
+    }
+    .goods .t9-price {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+    .goods .t9-price strong {
+      font-size: 20px;
+    }
+    .goods .t9-price strong, .goods .t9-price .yen{
+      color: #ffff00;
+    }
+    .goods .ko-box {
+      padding-left: 2px;
+      padding-right: 30px;
+      height: 46px;
+    }
+    .coupon-id {
+      display: block;
+      width: 55px;
+      font-size: 12px;
+      color: #ff2f65;
+      margin-left: 12px;
+      padding: 2px 5px 3px 10px;
+      background-color: #ffff00;
+      border-right: 1px dotted #ff2f65;
+    }
+    .list .coupon-id {
+      display: inline;
+      padding-left: 3px;
+    }
+    .goods .ko-list-tit {
+      height: 25px;
+      overflow: hidden;
+      white-space: normal;
+      line-height: 25px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .x-box {
+      padding: 30px;
+    }
+    .ko-con {
+      position: relative;
+    }
+    /*.swiper-pagination {
+      position: absolute;
+      text-align: center;
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      -o-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      z-index: 10;
+    }
+    .swiper-container-vertical>.swiper-pagination {
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translate3d(0,-50%,0);
+      -moz-transform: translate3d(0,-50%,0);
+      -o-transform: translate(0,-50%);
+      -ms-transform: translate3d(0,-50%,0);
+      transform: translate3d(0,-50%,0);
+    }*/
+    .board99 {
+      background-color: #7304a6;
+    }
+    .board99 .hd {
+      height: 75px;
+      background: url(http://img001.meitianhui.com/public/images/22/af/ef/09c2c266e9c87df0144563bc4db3e534493e48d9.png) no-repeat center center;
+      background-size: 239px 50px;
+    }
+    .goods .old-price {
+      margin-left: 4px;
+      color: #fff;
+      font-size: 16px;
+    }
+    #main .goods .coupon {
+      margin-left: 0;
+      margin-right: 3px;
+    }
+    @media screen and (min-width: 375px) and (max-width: 599px) {
+      .order .buy-btn {
+        clear: both;
+      }
+      .order .limit-t {
+        height: 34px;
+      }
+      .order .buy-btn {
+        clear: both;
+      }
+      .order99-info .o-sold {
+        display: inline;
+        margin-left: 3px;
+      }
+      .order99-info .coupon-sold {
+        line-height: 32px;
+      }
+      .goods img {
+        width: 93.5%;
+      }
+    }
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+      .order .buy-btn {
+        clear: both;
+      }
+      .order .limit-t {
+        height: 34px;
+      }
+      .order .buy-btn {
+        clear: both;
+      }
+      .order99-info .o-sold {
+        display: inline;
+        margin-left: 3px;
+      }
+      .order99-info .coupon-sold {
+        line-height: 32px;
+      }
+      .goods img {
+        width: 96%;
+      }
+    }
+    @media screen and (max-width: 374px) {
+      .goods .old-price {
+        margin-left: 0;
+        color: #fff;
+      }
+      .goods img {
+        width: 92%;
+      }
+    }
+    .bd .nav-img {
+      width: 100%;
+      margin-top: 0px;
+    }
+    /*特色推荐*/
+    .tese {
+      background-color: #fffece;
+    }
+    .tese .goods {
+      /*display: block;*/
+      background-color: #fffece;
+    }
+    .tese .goods {
+      display: block;
+      position: relative;
+    }
+    .tese .goods img {
+      padding: 0;
+    }
+    .tese .goods img.he {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      margin-right: 0px;
+    }
+    .tese .goods img.hu {
+      margin-left: -7px;
+    }
+    .tese .flex {
+      margin-left: 10px;
+    }
+    .tese .flex-item {
+      max-width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>  
+<div class="main">
+  <div class="top-b"><img class="nav-img" src="img/h1.jpg" alt=""></div>
+  <!-- 特色食品 te se -->
+  <div class="floor tese" id="">
+    <div class="bd">
+      <div class="flex">
+        <div class="flex-item">
+          <a href="" class="goods"><img class="he" src="img/he1.jpg"></a>
+        </div>
+        <div class="flex-item">
+          <a href="" class="goods"><img class="hu" src="img/hu1.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end 特色食品 te se -->
+  <div class="floor yuemo" id="xiaowu">
+    <div class="bd">
+      <img class="nav-img" src="img/banner1.jpg" alt="">
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=1760" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/0f/2c/f1/605d4244f9764521bff5f07249af0c8277aecc9c.jpg">
+            <p class="ko-list-tit">厨房淘米 洗菜 沥水 多功能神器2个装</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>18</strong><del class="old-price">¥21</del></div>
+              <span class="coupon-id">送18礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=1764" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/7c/0c/c7/8b2a67528aa59c98ec45eaf4da049fbab7f495ab.jpg">
+            <p class="ko-list-tit">西派珂抗菌砧板35*25cm 进口材料</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>35</strong><del class="old-price">¥78</del></div>
+              <span class="coupon-id">送35礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=2496" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/57/84/8c/0a2c9597214c330af120273689348ef07bc00977.jpg">
+            <p class="ko-list-tit">愤怒的小鸟 卡通儿童便当盒</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>15</strong><del class="old-price">¥35</del></div>
+              <span class="coupon-id">送15礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=1383" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/2f/f5/fe/9e295abb2eb342d978277cf75c8cf9665b81858b.jpg">
+            <p class="ko-list-tit">紫丁香保鲜碗4件套 冰鲜冷冻</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>32</strong><del class="old-price">¥49</del></div>
+              <span class="coupon-id">送32礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=2332" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/df/3f/0c/e836fff1353b9f42c811ec359a8c5df2d8c6b730.jpg">
+            <p class="ko-list-tit">厨房玻璃调料盒套装</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>34.9</strong><del class="old-price">¥65</del></div>
+              <span class="coupon-id">送35礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=2509" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/9f/e6/7c/7e00db6e4445ee3f4550096d6034ab527501c170.jpg">
+            <p class="ko-list-tit">透明带盖密封罐 5件套</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>35</strong><del class="old-price">¥49</del></div>
+              <span class="coupon-id">送35礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-item-margins">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=1387" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/56/38/63/82834bfc1c69ddb6aaa692e34589a5bbf1b8bfca.jpg">
+            <p class="ko-list-tit">陶瓷胆电炖锅0.7L</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>29</strong><del class="old-price">¥48</del></div>
+              <span class="coupon-id">送29礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=2186" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/a9/27/0c/4cd7903403c56dc6de855110eb836f035b37140f.jpg">
+            <p class="ko-list-tit">御美达 无油烟家用炒锅不粘锅32cm</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>54.9</strong><del class="old-price">¥95</del></div>
+              <span class="coupon-id">送55礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="floor yuemo" id="xiaowu">
+    <div class="bd">
+      <img class="nav-img" src="img/banner2.jpg" alt="">
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3340" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/97/d1/05/660a9ec39c608127d14c5d0869507b579a5b5d8d.jpg">
+            <p class="ko-list-tit">艾润花生牛轧糖152g*8包</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>29.9</strong><del class="old-price">¥79</del></div>
+              <span class="coupon-id">送15礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3311" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/74/be/5c/1a6f94ed5f87ce09ddec697595b98d5d092bd81d.jpg">
+            <p class="ko-list-tit">永州瑶山冰糖橙2500g</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>32</strong><del class="old-price">¥78</del></div>
+              <span class="coupon-id">送16礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3301" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/33/68/c9/50937d1e13766f8b498ff146cb04ae0e81f3049f.jpg">
+            <p class="ko-list-tit">美国进口红仁红皮核桃1000g</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>89</strong><del class="old-price">¥150</del></div>
+              <span class="coupon-id">送45礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3300" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/5b/0e/dc/a9ad86ae8a34f90d54f076c575af7a680d61704a.jpg">
+            <p class="ko-list-tit">广西桂花茶 浓香花草茶35g</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>29</strong><del class="old-price">¥39</del></div>
+              <span class="coupon-id">送15礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3298" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/e8/e3/52/d3e86668f59972ec0caf068a0a2d0fe964cdc0de.jpg">
+            <p class="ko-list-tit">万源生态散养黑鸡蛋 10枚装</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>32.8</strong><del class="old-price">¥68</del></div>
+              <span class="coupon-id">送17礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3293" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/a3/f2/f4/925a7d5445af765c9b56e0f850412e33e2dc9fd2.jpg">
+            <p class="ko-list-tit">大凉山里的紫色土豆 5斤装</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>19.8</strong><del class="old-price">¥46</del></div>
+              <span class="coupon-id">送10礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-item-margins">
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3292" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/9d/01/49/efdcdbf26ae34083fdbc38a4c95a25f21e8e751e.jpg">
+            <p class="ko-list-tit">四川安岳新鲜黄柠檬一级中果1斤</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>9.9</strong><del class="old-price">¥16.8</del></div>
+              <span class="coupon-id">送10礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="http://h.meitianhui.com/detail.html?item_id=3291" class="goods">
+            <img class="lazy" data-lazy-src="http://img001.meitianhui.com/public/images/81/a0/70/287a7fa2093d2c946499f1d45b9fa704938b2fd3.jpg">
+            <p class="ko-list-tit">陕西特产临潼甜石榴软籽石榴10斤</p>
+            <div class="ko-box">
+              <div class="t9-price"><span class="yen">¥</span><strong>69</strong><del class="old-price">¥128</del></div>
+              <span class="coupon-id">送35礼券</span><span class="to-detail to-detail-selling">立即抢购<span class="icon arrow-icon"></span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <!--特色-->
+  <div class="floor clear common-vip">
+    <div class="cv-item cv-quan">购物送礼券</div>
+    <div class="cv-item cv-express">全场包邮</div>
+    <div class="cv-item cv-promise">正品保证</div>
+    <div class="cv-item cv-48">48小时发货</div>
+  </div>
+
+  <!--热线-->
+  <div class="floor hotline">
+    服务热线:400-099-8809
+  </div>
+
+  <!--底部-->
+  <div class="floor bar">
+    <a href="/wap/index.html" class="bar-item bar-home  cur ">首页
+    </a>
+    <a href="/wap/sale.html" class="bar-item bar-sale ">特卖</a>
+    <a href="/wap/list/cat.html" class="bar-item bar-cats ">分类</a>
+    <a href="/wap/member-index.html" class="bar-item bar-my ">我的</a>
+  </div>
+</div>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?d4d2904e60783f32e1ebf8b56d6ea64b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</body>
+</html>

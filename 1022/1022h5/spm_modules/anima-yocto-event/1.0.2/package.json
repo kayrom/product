@@ -1,0 +1,29 @@
+{
+  "name": "anima-yocto-event",
+  "version": "1.0.2",
+  "description": "the event from yocto",
+  "keywords": [],
+  "homepage": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.alibaba-inc.com/animajs/yocto-event.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+      "anima-yocto-core": "1.1.0"
+    },
+    "devDependencies": {
+      "expect.js": "0.3.1"
+    },
+    "engines": {
+      "seajs": "2.2.1"
+    },
+    "tests": "tests/*.js"
+  }
+}

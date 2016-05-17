@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta itemprop="name" content="每天惠旗下特卖网 | 慧顾家 用智慧照顾家" />
+    <title>入冬来送暖 温暖专场</title>
+    <link href="http://img001.meitianhui.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="keywords" content="每天惠商城，每天惠，慧顾家，惠顾家，天天特价，发现值得买，值得买，白菜价，特产，打折，品牌折扣，限时抢购，特卖" />
+    <meta name="description" content="慧顾家（www.meitianhui.com），专注原产地直供特卖；精选源头优质商品，拒绝一切中间商，产品更低价！全场购物享包邮，提供贴心服务！购买商品获赠礼券，礼券还可以免费包邮兑换心仪商品；让您一份钱两份花，智慧照顾家！" />
+    <link rel="stylesheet" href="http://img001.meitianhui.com/css/g.css">
+     <script src="http://img001.meitianhui.com/js/jquery.js"></script>
+     <script src="http://img001.meitianhui.com/js/g.js"></script>
+  <style>
+    #content {}
+    #content .cbox {
+      width: 990px;
+      margin: 0 auto;
+    }
+    .box {
+      background: #fff;
+    }
+    .b-box {
+      background-color: #eceff4;
+    }
+    .box img {
+      display: block;
+    }
+    .cbox a {
+      position: absolute;
+      display: block;
+      z-index: 1000;
+      width: 360px;
+      height: 30px;
+    }
+    .cbox .link1 {
+      left: 166px;
+      top: 109px;
+      width: 470px;
+      height: 40px;
+    }
+    .cbox .link2 {
+      left: 115px;
+      top: 184px;
+      /*top: 177px;*/
+    }
+    .cbox .link3 {
+      left: 92px;
+      top: 671px;
+      width: 280px;
+    }
+    .cbox .link4 {
+      left: 74px;
+      top: 1131px;
+      width: 280px;
+    }
+    .cbox .link5 {
+      left: 853px;
+      top: 1131px;
+      width: 90px;
+    }
+    .cbox .link6 {
+      left: 344px;
+      top: 114px;
+    }
+    .cbox .link7 {
+      left: 72px;
+      top: 571px;
+      width: 314px;
+    }
+    .cbox .link8 {
+      left: 60px;
+      top: 112px;
+      width: 314px;
+    }
+    .cbox .link9 {
+      left: 169px;
+      top: 113px;
+    }
+    #content {
+      padding-bottom: 60px;
+     }
+      .common-vip {
+      border-top: 2px solid #f0f0f0;
+    }
+    .c-box{
+      width: 990px;
+    }
+  </style>
+  <style>.header, #content, #hfoot, .foot {min-width:1190px;}</style>
+  <style>
+    .arial {
+      font-family: arial;
+    }
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .floor {
+      width:100%;
+    }
+    .floor1 {
+      background: url(http://img001.meitianhui.com/public/images/d2/85/81/bd194d8ffdce589515ff541a91955a3513ee0d4d.jpg) no-repeat top center;
+      height: 1530px;
+    }
+    .floor2 {
+      background: url(http://img001.meitianhui.com/public/images/01/69/27/b5fa40ffc6471469defb55c2ea1d53946e85d3cf.jpg) no-repeat top center;
+      height: 1257px;
+    }
+    .floor3 {
+      background: url(http://img001.meitianhui.com/public/images/d6/65/3f/8d7550e80f6d3490d21e91f7b7ddea9e9c08b0c1.jpg) no-repeat top center;
+      height: 1218px;
+    }
+    .floor4 {
+      background: url(http://img001.meitianhui.com/public/images/cb/e5/d5/e377475983236164d9a5cbf62dbd96e9b54e7d97.jpg) no-repeat top center;
+      height: 1857px;
+    }
+    .box {
+      width: 990px;
+      margin: 0 auto;
+      position: relative;
+      background-color: transparent;
+    }
+    .floor1 .box {
+      height: 1530px;
+    }
+    .box a {
+      position: absolute;
+      display: block;
+      /*background-color: rgba(0,0,0,0.2);*/
+    }
+    .nuanbao {
+      width: 335px;
+      height: 340px;
+      left: 0;
+      top: 838px;
+    }
+    .shoutao {
+      width: 200px;
+      height: 365px;
+      left: 363px;
+      top: 670px;
+    }
+    .nuanjiao {
+      width: 400px;
+      height: 300px;
+      right: 10px;
+      top: 900px;
+    }
+    .nuantan {
+      width: 400px;
+      height: 300px;
+      right: 25px;
+      top: 1220px;
+    }
+    .zhuodian {
+      width: 500px;
+      height: 300px;
+      left: 0;
+      top: 1200px;
+    }
+    .tuoxie {
+      width: 530px;
+      height: 280px;
+      left: 90px;
+      top: 410px;
+    }
+    .nuanqi {
+      width: 260px;
+      height: 520px;
+      right: 0;
+      top: 150px;
+    }
+    .reshui {
+      width: 410px;
+      height: 230px;
+      left: 0px;
+      top: 750px;
+    }
+    .nuanshou {
+      width: 500px;
+      height: 230px;
+      right: 0;
+      top: 740px;
+    }
+    .honggan {
+      width: 565px;
+      height: 230px;
+      left: 180px;
+      top: 985px;
+    }
+
+    .maotan {
+      width: 470px;
+      height: 230px;
+      left: 0;
+      top: 50px;
+    }
+    .shuiyi {
+      width: 480px;
+      height: 550px;
+      left: 600px;
+      top: 30px;
+    }
+    .banzhen {
+      width: 490px;
+      height: 240px;
+      left: 0;
+      top: 300px;
+    }
+    .kaozhen {
+      width: 390px;
+      height: 180px;
+      left: 240px;
+      top: 645px;
+    }
+    .beixin {
+      width: 350px;
+      height: 320px;
+      right: 0;
+      top: 630px;
+    }
+    .nuanjia {
+      width: 550px;
+      height: 300px;
+      left: -70px;
+      top: 830px;
+    }
+    .retan {
+      width: 510px;
+      height: 220px;
+      right: 0;
+      top: 990px;
+    }
+    
+    .tongtou {
+      width: 450px;
+      height: 420px;
+      left: 0px;
+      top: 10px;
+    }
+    .chuifeng {
+      width: 350px;
+      height: 460px;
+      right: 0;
+      top: 50px;
+    }
+    .zuodian {
+      width: 640px;
+      height: 220px;
+      left: 0px;
+      top: 440px;
+    }
+    .zhongyao {
+      width: 610px;
+      height: 290px;
+      left: 0;
+      top: 750px;
+    }
+    .yurong {
+      width: 350px;
+      height: 375px;
+      right: 0;
+      top: 600px;
+    }
+    .matong {
+      width: 520px;
+      height: 290px;
+      left: 0;
+      top: 1060px;
+    }
+    .shuibei {
+      width: 415px;
+      height: 320px;
+      right: 0;
+      top: 1060px;
+    }
+    
+  </style>
+</head>
+<body>
+   <!--吊顶-->
+    <div id="site-nav">
+        <div class="site-nav-bd">
+           <ul class="site-links">
+                <li>
+                    <a href="http://www.meitianhui.com/" target="_blank">每天惠</a>
+                </li>
+                <li>
+                    <a href="http://h.meitianhui.com/index.html">慧顾家</a>
+                </li>
+                <li>
+                    <a href="http://www.meitianhui.com/?channel_id=2" target="_blank">兑换中心</a>
+                </li>
+            </ul>
+            <ul class="site-info">
+                <li class="site-quan">
+                    <a href="http://h.meitianhui.com/exchange.html" target="_blank">礼券充值</a>
+                </li>
+                <li class="site-login">
+                    <!--未登录-->
+                    <div class="site-logout-bd">
+                        <a href="http://h.meitianhui.com/passport-signin.html" class="site-login-btn">登录</a>
+                        <a href="http://h.meitianhui.com/passport-signup.html" class="site-signin">免费注册</a>
+                    </div>
+                    <!--登录后-->
+                    <div class="site-login-bd">
+                        <a href="http://h.meitianhui.com/member-index.html" class="site-login-nick"></a>
+                        <a href="http://h.meitianhui.com/passport-logout.html">退出</a>
+                    </div>
+                </li>
+                <li class="site-cart">
+                    <a href="http://h.meitianhui.com/cart.html">购物车</a>
+                </li>
+                <li class="site-my">
+                    <a href="http://h.meitianhui.com/trade-list.html">我的订单</a>
+                </li>
+                <li class="site-shop">
+                    <a href="http://h.meitianhui.com/shop">商家中心</a>
+                </li>
+                <li class="site-collect">
+                    <a href="javascript:;" class="J_CollectSite">
+                        收藏慧顾家
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--logo && key point-->
+    <div class="logo-qr clearfix c-box">
+        <div class="c-box">
+            <div class="logo-box">
+                <div class="main-logo">
+                    <a href="http://h.meitianhui.com/" target="_blank">
+                        <img src="http://img001.meitianhui.com/public/images/56/3c/38/f883d1e3b6862fe9854849066a114c8194ed11b9.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <span class="hotline">
+                    服务热线：<strong>400-099-8809</strong>
+                </span>
+                <div class="qr-key">
+                    <span class="key-point kp1"><i class="ico"></i>购物送礼券</span>
+                    <span class="key-point kp2"><i class="ico"></i>全场包邮</span>
+                    <span class="key-point kp3"><i class="ico"></i>正品保证</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  <div id="content">
+    <div class="floor floor1">
+      <div class="box">
+        <a href="http://h.meitianhui.com/detail.html?item_id=3272" target="_blank" class="nuanbao"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3279" target="_blank" class="shoutao"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3237" target="_blank" class="nuanjiao"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3240" target="_blank" class="nuantan"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3257" target="_blank" class="zhuodian"></a>
+      </div>
+    </div>
+    <div class="floor floor2">
+      <div class="box">
+        <a href="http://h.meitianhui.com/detail.html?item_id=3276" target="_blank" class="tuoxie"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2051" target="_blank" class="nuanqi"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3250" target="_blank" class="reshui"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3277" target="_blank" class="nuanshou"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3283" target="_blank" class="honggan"></a>
+      </div>
+    </div>
+    <div class="floor floor3">
+      <div class="box">
+        <a href="http://h.meitianhui.com/detail.html?item_id=2015" target="_blank" class="maotan"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3278" target="_blank" class="shuiyi"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2436" target="_blank" class="banzhen"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2323" target="_blank" class="kaozhen"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3255" target="_blank" class="beixin"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3253" target="_blank" class="nuanjia"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2356" target="_blank" class="retan"></a>
+      </div>
+    </div>
+    <div class="floor floor4">
+      <div class="box">
+        <a href="http://h.meitianhui.com/detail.html?item_id=3334" target="_blank" class="tongtou"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3274" target="_blank" class="chuifeng"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2439" target="_blank" class="zuodian"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3268" target="_blank" class="zhongyao"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2324" target="_blank" class="yurong"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=3275" target="_blank" class="matong"></a>
+        <a href="http://h.meitianhui.com/detail.html?item_id=2165" target="_blank" class="shuibei"></a>
+      </div>
+    </div>
+  </div>
+  <!-- // <script src="index.js"></script> -->
+  <div class="common-vip">
+    <div class="c-box" style="width: 1190px;">
+        <ul class="vip-list clearfix">
+            <li>
+                <i class="ico cv1"></i>
+                <strong>100%礼券兑换</strong>
+
+                <p>礼券兑好礼 安全放心</p>
+            </li>
+            <li>
+                <i class="ico cv2"></i>
+                <strong>正品保证</strong>
+
+                <p>正规渠道 品质保证</p>
+            </li>
+            <li class="vip-spe">
+                <i class="ico cv3"></i>
+                <strong>全场包邮</strong>
+
+                <p>境外、港澳台除外</p>
+            </li>
+            <li class="last">
+                <i class="ico cv4"></i>
+                <strong>48小时发货</strong>
+
+                <p>假日顺延</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--footer-->
+<div id="hfoot">
+    <div class="c-box clearfix" style="width: 1190px;">
+        <div class="tel-email">
+            <div class="tel">
+                <p>服务热线:</p>
+                <h4 class="bb">400-099-8809</h4>
+            </div>
+            <div class="t-email">邮箱:</div>
+            <a href="mailTo:kefu@zjmeitianhui.com">kefu@zjmeitianhui.com</a>
+        </div>
+        <div class="helper clearfix">
+            <div class="helper-list">
+                <h4>帮助中心</h4>
+                <ul>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#huiyuanzhuce" target="_blank">会员注册</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#xinshourumen" target="_blank">新手入门</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#mimaguanli" target="_blank">密码管理</a></li>
+                </ul>
+            </div>
+            <div class="helper-list">
+                <h4>支付方式</h4>
+                <ul>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#weixinzhifu" target="_blank">微信支付</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#zhifubaozhifu" target="_blank">支付宝支付</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#fukuanshuoming" target="_blank">付款说明</a></li>
+                </ul>
+            </div>
+            <div class="helper-list">
+                <h4>配送方式</h4>
+                <ul>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#baoyouzhengce" target="_blank">包邮政策</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#wuliuchaxun" target="_blank">物流查询</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#yanhuoyuchashou" target="_blank">验货与查收</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#querenshouhuoshuoming" target="_blank">确认收货说明</a></li>
+                </ul>
+            </div>
+            <div class="helper-list">
+                <h4>售后服务</h4>
+                <ul>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#tuihuozhengce" target="_blank">退货政策</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#tuihuoliucheng" target="_blank">退货流程</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#tuikuanshixiao" target="_blank">退款时效</a></li>
+                </ul>
+            </div>
+            <div class="helper-list helper-list-last">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="http://h.meitianhui.com/shop/passport/signup.html?hgj=1" target="_blank">商家入驻</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#jiaruwomen" target="_blank">加入我们</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#lianxiwomen" target="_blank">联系我们</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#guanyuwomen" target="_blank">关于我们</a></li>
+                    <li><a href="http://h.meitianhui.com/huodong/helpCenter.html#youqing" target="_blank">友情链接</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="qr">
+            <img src="http://img001.meitianhui.com/public/images/8b/2f/3b/eb09e5d89e94456edb85e9b7553aee8fe10d7785.png" alt="">
+
+            <p>手机扫一扫</p>
+        </div>
+    </div>
+</div>
+
+<div class="hbar" id="hbar">
+    <ul>
+        <li class="hbar-fav hbar-nav">
+            <a href="http://htest.meitianhui.com/member-collectitems.html" class="hbar-logo hbar-fav-logo" target="_blank"></a>
+            <div class="hbar-fav-text"></div>
+            <div class="hbar-tip hbar-fav-tip">
+                <div class="triangle"></div>
+                收藏夹
+            </div>
+        </li>
+        <li class="hbar-share hbar-nav">
+            <div class="hbar-logo hbar-share-logo" title="分享"></div>
+            <div class="hbar-share-text">
+            </div>
+            <div class="hbar-tip hbar-share-tip">
+                <div class="triangle"></div>
+                <div class="baidu-share">
+                    <h4>分享</h4>
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+                </div>
+            </div>
+        </li>
+        <li class="hbar-service hbar-nav">
+            <a class="hbar-logo hbar-service-logo" href="http://chat16.live800.com/live800/chatClient/chatbox.jsp?companyID=539127&configID=79795&jid=1508190076" target="_blank"></a>
+            <div class="hbar-tip hbar-totop-tip"><div class="triangle"></div>在线客服</div>
+        </li>
+        <li class="hbar-totop hbar-nav">
+            <div class="hbar-logo hbar-totop-logo"></div>
+            <div class="hbar-tip hbar-totop-tip"><div class="triangle"></div>返回顶部</div>
+        </li>
+    </ul>
+</div>
+
+<div id="foot" class="foot">
+    <div class="c-box">
+        <!-- <div class="foot-links">
+    <a href="#" target="_blank">每天惠</a>
+    <span>|</span>
+    <a href="#" target="_blank">招商加盟</a>
+    <span>|</span>
+    <a href="#" target="_blank">供应商入驻</a>
+    <span>|</span>
+    <a href="#" target="_blank">加入我们</a>
+    <span>|</span>
+    <a href="#" target="_blank">联系方式</a>
+    <span>|</span>
+    <a href="#" target="_blank">关于我们</a>
+</div> -->
+        <p class="copy-icp"> Copyright &copy; 2012-2015 www.meitianhui.com 深圳市每天惠电子商务有限公司 版权所有 &nbsp;粤ICP备15047826号-1 </p>
+
+        <div class="identification">
+        </div>
+    </div>
+</div>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d4d2904e60783f32e1ebf8b56d6ea64b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- Live800默认跟踪代码: 开始-->
+<script language="javascript" src="http://chat16.live800.com/live800/chatClient/monitor.js?jid=1508190076&companyID=539127&configID=79760&codeType=custom"></script>
+<!-- Live800默认跟踪代码: 结束-->
+<div style='display:none;'><a href='http://www.live800.com'>网站聊天</a></div>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-45904585-22']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
+</body>
+</html>
+
